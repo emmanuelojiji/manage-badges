@@ -1,0 +1,32 @@
+.App{
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 50px;
+  position: relative;
+}
+
+#root{
+  position: relative;
+}
+
+button{
+  cursor: pointer;
+}
+
+.grid-container{
+  width: 100%;
+  max-width: 1200px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+

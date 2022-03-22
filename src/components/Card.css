@@ -1,0 +1,49 @@
+
+.card{
+    padding-top:100px;
+    padding-bottom: 85px;
+    width: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  .card .badgeName{
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 800;
+  }
+  
+  .card .badgeDescription{
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #9C9C9C;
+    font-family: 'Nunito';
+  }
+  
+  .avatar{
+    height: 85px;
+    width: 85px;
+    background-color:#254C55;
+    border-radius: 5000px;
+    position: absolute;
+    top: -10%;
+    border: solid 5px white;
+  }
+  
+  button{
+    background-color: #F74557; 
+    border: 0;
+    padding: 12px 30px;
+    border-radius: 500px;
+    color: white;
+  }

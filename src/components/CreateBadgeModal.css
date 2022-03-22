@@ -1,0 +1,48 @@
+.createBadgeModalBackground{
+    background: rgba(0,0,0,0.3);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.CreateBadgeModal{
+    height: 300px;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+input, textarea{
+    background: #e2e2e2;
+    border: 0;
+    resize: none;
+    width: 100%;
+    padding-left: 12px;
+    border-radius: 5px;
+}
+
+.input-wrap{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 40px;
+}
+
+textarea{
+    min-height: 70px;
+    padding-top: 12px;
+}
