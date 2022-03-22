@@ -29,6 +29,7 @@ button{
 
 header{
   width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 50px;
