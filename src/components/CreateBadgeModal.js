@@ -9,7 +9,7 @@ const CreateBadgeModal = ({ onClick }) => {
       <div className="CreateBadgeModal">
         <h4>Create Badge</h4>
 
-        {(() => {
+        {/*(() => {
           if (view === 1) {
             return (
               <>
@@ -34,7 +34,7 @@ const CreateBadgeModal = ({ onClick }) => {
               </>
             );
           }
-        })()}
+        })() */}
       </div>
     </div>
   );
