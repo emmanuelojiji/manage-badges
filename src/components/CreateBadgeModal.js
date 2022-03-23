@@ -11,6 +11,7 @@ const CreateBadgeModal = ({ onClick }) => {
           if (view === 1) {
             return (
               <>
+              <div className="modal-create-badge">
                 <div className="modal-header">
                   <span>Create Badge</span>
                 </div>
@@ -51,13 +52,16 @@ const CreateBadgeModal = ({ onClick }) => {
                 </div>
 
                 <button onClick={() => setView(2)}>Next</button>
+                </div>
               </>
             );
           } else if (view === 2) {
             return (
               <>
-                <h2>Badge Created</h2>
+              <div className="modal-badge-created">
+                <h2>Badge Created!</h2>
                 <button>Award Badge</button>
+                </div>
               </>
             );
           }
