@@ -11,8 +11,11 @@ const CreateBadgeModal = ({ onClick }) => {
           if (view === 1) {
             return (
               <>
+                <div className="modal-header">
+                  <span>Create Badge</span>
+                </div>
 
-              <div className="badge-image"></div>
+                <div className="badge-image"></div>
 
                 <div className="input-wrap">
                   <h4 className="input-title">Badge Name</h4>
@@ -28,12 +31,23 @@ const CreateBadgeModal = ({ onClick }) => {
                   <h4 className="input-title">Icon Colour</h4>
 
                   <div className="colour-circle-container">
-                    <div className="colour-circle" style={{backgroundColor: '#254C55'}}></div>
-                    <div className="colour-circle" style={{backgroundColor: '#5690C7'}}></div>
-                    <div className="colour-circle" style={{backgroundColor: '#9BE2FF'}}></div>
-                    <div className="colour-circle" style={{backgroundColor: '#E15866'}}></div>
-                  </div> 
-
+                    <div
+                      className="colour-circle"
+                      style={{ backgroundColor: "#254C55" }}
+                    ></div>
+                    <div
+                      className="colour-circle"
+                      style={{ backgroundColor: "#5690C7" }}
+                    ></div>
+                    <div
+                      className="colour-circle"
+                      style={{ backgroundColor: "#9BE2FF" }}
+                    ></div>
+                    <div
+                      className="colour-circle"
+                      style={{ backgroundColor: "#E15866" }}
+                    ></div>
+                  </div>
                 </div>
 
                 <button onClick={() => setView(2)}>Next</button>
@@ -42,7 +56,8 @@ const CreateBadgeModal = ({ onClick }) => {
           } else if (view === 2) {
             return (
               <>
-                <h2>View 2</h2>
+                <h2>Badge Created</h2>
+                <button>Award Badge</button>
               </>
             );
           }
