@@ -27,6 +27,12 @@ button{
   padding-top: 50px;
 }
 
+@media only screen and (max-width: 1111px) {
+  .grid-container {
+    justify-content: center;
+  }
+}
+
 header{
   width: 100%;
   max-width: 1200px;
