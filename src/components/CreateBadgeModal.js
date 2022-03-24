@@ -21,65 +21,67 @@ const CreateBadgeModal = ({
               <>
                 <div className="modal-create-badge">
                   <div className="modal-header">
-                    <span>Create Badge</span>
-                  </div>
-
-                  <div className="badge-image"></div>
-
-                  <div className="input-wrap">
-                    <h4 className="input-title">Badge Name</h4>
-                    <input
-                      type="text"
-                      placeholder="Badge Name"
-                      onChange={(e) => setBadgeName(e.target.value)}
-                    ></input>
-                  </div>
-
-                  <div className="input-wrap">
-                    <h4 className="input-title">Badge Description</h4>
-                    <textarea
-                      placeholder="Badge Description"
-                      onChange={(e) => setBadgeDescription(e.target.value)}
-                    />
-                  </div>
-
-                  <div className="input-wrap">
-                    <h4 className="input-title">Icon Colour</h4>
-
-                    <div className="colour-circle-container">
-                      <div
-                        className="colour-circle"
-                        style={{ backgroundColor: "#254C55" }}
-                      ></div>
-                      <div
-                        className="colour-circle"
-                        style={{ backgroundColor: "#5690C7" }}
-                      ></div>
-                      <div
-                        className="colour-circle"
-                        style={{ backgroundColor: "#9BE2FF" }}
-                      ></div>
-                      <div
-                        className="colour-circle"
-                        style={{ backgroundColor: "#E15866" }}
-                      ></div>
+                      <span>Create Badge</span>
                     </div>
-                  </div>
+                    <div className="modal-create-badge-content">
 
-                  <button
-                    onClick={() => {
-                      if (
-                        badgeName.length == 0 ||
-                        badgeDescription.length == 0
-                      ) {
-                        console.log("One or both are empty.");
-                      } else if (badgeName && badgeDescription) {
-                        setView(2);
-                      }
-                    }}
-                  >
-                    Next
-                  </button>
+                    <div className="badge-image"></div>
+
+                    <div className="input-wrap">
+                      <h4 className="input-title">Badge Name</h4>
+                      <input
+                        type="text"
+                        placeholder="Badge Name"
+                        onChange={(e) => setBadgeName(e.target.value)}
+                      ></input>
+                    </div>
+
+                    <div className="input-wrap">
+                      <h4 className="input-title">Badge Description</h4>
+                      <textarea
+                        placeholder="Badge Description"
+                        onChange={(e) => setBadgeDescription(e.target.value)}
+                      />
+                    </div>
+
+                    <div className="input-wrap">
+                      <h4 className="input-title">Icon Colour</h4>
+
+                      <div className="colour-circle-container">
+                        <div
+                          className="colour-circle"
+                          style={{ backgroundColor: "#254C55" }}
+                        ></div>
+                        <div
+                          className="colour-circle"
+                          style={{ backgroundColor: "#5690C7" }}
+                        ></div>
+                        <div
+                          className="colour-circle"
+                          style={{ backgroundColor: "#9BE2FF" }}
+                        ></div>
+                        <div
+                          className="colour-circle"
+                          style={{ backgroundColor: "#E15866" }}
+                        ></div>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => {
+                        if (
+                          badgeName.length == 0 ||
+                          badgeDescription.length == 0
+                        ) {
+                          console.log("One or both are empty.");
+                        } else if (badgeName && badgeDescription) {
+                          setView(2);
+                        }
+                      }}
+                    >
+                      Next
+                    </button>
+                  </div>
                 </div>
               </>
             );
@@ -99,7 +101,7 @@ const CreateBadgeModal = ({
             return (
               <div className="modal-badge-award">
                 <div className="modal-header">
-                  <h4>Award Badge</h4>
+                  <h4>Choose Recipients</h4>
                 </div>
 
                 <div className="user-row">
@@ -138,6 +140,8 @@ const CreateBadgeModal = ({
                   <div className="avatar"></div>
                   <span>Joshua Brown</span>
                 </div>
+ 
+                <button>Award</button>
               </div>
             );
           }
