@@ -5,7 +5,7 @@ const Card = ({badgeName, badgeDescription}) => {
         <div className="card">
 
 
-<div className='avatar'></div>
+<div className='badge'></div>
             <h1 className="badgeName">{badgeName}</h1>
             <p className='badgeDescription'>{badgeDescription}</p>
             <button>Manage</button>

@@ -95,14 +95,51 @@ const CreateBadgeModal = ({
                 </div>
               </>
             );
-          } else if (view === 3){
+          } else if (view === 3) {
             return (
               <div className="modal-badge-award">
                 <div className="modal-header">
-                <h4>Award Badge</h4>
+                  <h4>Award Badge</h4>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+
+                  <span>Barrington Hayes </span>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+                  <span>Charlotte Morgan </span>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+                  <span>Danielle Caley</span>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+                  <span>Emmanuel Ojiji </span>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+                  <span>Michael Bryson</span>
+                </div>
+
+                <div className="user-row">
+                  <input type="checkbox" id="vehicle1" name="vehicle1"></input>
+                  <div className="avatar"></div>
+                  <span>Joshua Brown</span>
                 </div>
               </div>
-            )
+            );
           }
         })()}
       </div>
