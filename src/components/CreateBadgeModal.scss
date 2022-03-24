@@ -100,20 +100,32 @@
   }
 
   button {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
-  .modal-create-badge{
+  .modal-create-badge {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .modal-badge-created{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .modal-badge-created {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    .badgeName {
+      font-size: 18px;
+      font-family: "Nunito";
+      font-weight: 800;
+    }
+
+    .badgeDescription {
+      margin-bottom: 25px;
+      font-size: 14px;
+      color: #9c9c9c;
+      font-family: "Nunito";
+    }
   }
 }

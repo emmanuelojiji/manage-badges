@@ -87,14 +87,22 @@ const CreateBadgeModal = ({
             return (
               <>
                 <div className="modal-badge-created">
-                  <div className="badge-image"></div>
                   <h2>Badge Created!</h2>
-                  <h2>'{badgeName}'</h2>
-                  <p>{badgeDescription}</p>
-                  <button>Award Badge</button>
+                  <div className="badge-image"></div>
+                  <h2 className="badgeName">'{badgeName}'</h2>
+                  <p className="badgeDescription">{badgeDescription}</p>
+                  <button onClick={() => setView(3)}>Award Badge</button>
                 </div>
               </>
             );
+          } else if (view === 3){
+            return (
+              <div className="modal-badge-award">
+                <div className="modal-header">
+                <h4>Award Badge</h4>
+                </div>
+              </div>
+            )
           }
         })()}
       </div>
