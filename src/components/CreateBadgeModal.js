@@ -104,6 +104,8 @@ const CreateBadgeModal = ({
                   <h4>Choose Recipients</h4>
                 </div>
 
+               
+
                 <div className="user-row">
                   <input type="checkbox" id="vehicle1" name="vehicle1"></input>
                   <div className="avatar"></div>
