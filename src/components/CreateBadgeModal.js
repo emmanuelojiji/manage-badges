@@ -1,11 +1,16 @@
 import { useState } from "react";
 import "./CreateBadgeModal.scss";
+import Card from "./Card";
 
-const CreateBadgeModal = ({ onClick }) => {
+const CreateBadgeModal = ({
+  onClick,
+  badgeName,
+  badgeDescription,
+  setBadgeName,
+  setBadgeDescription,
+  badgeInfo,
+}) => {
   const [view, setView] = useState(1);
-
-  const [badgeName, setBadgeName] = useState("");
-  const [badgeDescription, setBadgeDescription] = useState("");
 
   return (
     <div className="createBadgeModalBackground" onClick={onClick}>
@@ -63,10 +68,13 @@ const CreateBadgeModal = ({ onClick }) => {
 
                   <button
                     onClick={() => {
-                      if (badgeName.length == 0 || badgeDescription.length == 0) {
+                      if (
+                        badgeName.length == 0 ||
+                        badgeDescription.length == 0
+                      ) {
                         console.log("One or both are empty.");
-                      } else if (badgeName && badgeDescription){
-                        setView(2)
+                      } else if (badgeName && badgeDescription) {
+                        setView(2);
                       }
                     }}
                   >
