@@ -93,6 +93,7 @@
       width: 100%;
       padding-left: 12px;
       border-radius: 5px;
+      font-family: 'nunito';
 
       &::placeholder {
         font-family: "Nunito";
@@ -115,9 +116,12 @@
       border: solid 1px #b7b7b7;
       background: #fafafa;
     }
+  
   }
 
   .modal-badge-created {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +159,7 @@
       .avatar {
         height: 50px;
         width: 50px;
-        background-color: grey;
+        background-color: #eaeaea;
         border-radius: 500px;
         margin-right: 10px;
       }
